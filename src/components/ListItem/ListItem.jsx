@@ -7,11 +7,11 @@ import {
 
 import './ListItem.scss';
 
-const ListItem = () => {
+const ListItem = ({image, index}) => {
     return (
-        <div className='listItem'>
+        <div className='listItem' style={{ left: index * 225 - 50 + index * 2.5 }}>
             <img
-                src="https://occ-0-1723-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABU7D36jL6KiLG1xI8Xg_cZK-hYQj1L8yRxbQuB0rcLCnAk8AhEK5EM83QI71bRHUm0qOYxonD88gaThgDaPu7NuUfRg.jpg?r=4ee"
+                src={image}
                 alt=""
             />
 
